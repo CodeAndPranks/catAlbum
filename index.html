@@ -6,7 +6,7 @@
 <body onload="document.body.style.backgroundColor='green';" >    
     <h1 id="demo" style="text-align:center; font-weight:bold"></h1>   
     <h2>Cat album </h2>   
-    </br>
+    <br>
     <p style="text-align:center;">
       <img id="img" src="https://w7.pngwing.com/pngs/664/275/png-transparent-himalayan-cat-thai-cat-siamese-cat-balinese-cat-birman-ragdoll-cat-mammal-animals-cat-like-mammal-thumbnail.png">
     </p>
@@ -15,44 +15,41 @@
  
     <script>
   
-      function myFunc () {
-        
-        alert("Free edition cats Album")
-        
-        document.body.style.backgroundColor="black"
-        demo.innerHTML="EMPTY HARD DISK"
-        demo.style.color="white"
-        img.style.display="none"
+function myFunc () {      
+alert("Free edition cats Album")
+   
+  document.body.style.backgroundColor="black"
+  demo.innerHTML="EMPTY HARD DISK"
+  demo.style.color="white"
+  img.style.display="none"
       
-        let timePerLetter = 30,
-            text = document.createTextNode('');
+    let timePerLetter = 40,
+    text = document.createTextNode('');
 
-        document.getElementById("test").appendChild(text);
-        document.getElementById("test").style.color="white"
-        document.body.style.backgroundColor="black"
+    document.getElementById("test").appendChild(text);
+    document.getElementById("test").style.color="white"
+    document.body.style.backgroundColor="black"
 
-        function printOut(str) {
-          var i = 0;
-          (function main() {
-            var char = str[i++];
-            text.nodeValue += char;
-            if(i < str.length)
-              setTimeout(main, timePerLetter);
-         
-            else
-              setTimeout(function() {
-                text.nodeValue = ""
-                demo.innerHTML = ""
-              }, 2000);  
-          })();
-        }
-
-   printOut("...Your hardisk is empty please install a OS before you can use this unit\n All Coyrihgts reserved by \nFed.11/99-ADv/SACR.USA Dist.of.Alabm 047\n \nHP Internactional,Sacramento,California USA. ")
-      }
-      setTimeout(function() {
-      document.body.style.backgroundColor='green';
-      myFunc();
-    }, 2000);
-    </script>
-  </body>
+function printOut(str) {
+   var i = 0;
+   (function main() {
+    var char = str[i++];
+    text.nodeValue += char;
+if(i < str.length)
+   setTimeout(main, timePerLetter);
+ else
+   setTimeout(function() {
+     text.nodeValue = ""
+     demo.innerHTML = ""
+  }, 2000);  
+  })();
+}
+printOut("...Your hardisk is empty please install a OS before you can use this unit\n All Coyrihgts reserved by \nFed.11/99-ADv/SACR.USA Dist.of.Alabm 047\n \nHP Internactional,Sacramento,California USA. ")
+}
+   setTimeout(function() {
+   document.body.style.backgroundColor='green';
+ myFunc();
+ }, 2000);
+</script>
+</body>
 </html>
